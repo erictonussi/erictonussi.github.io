@@ -50,8 +50,8 @@
     border-radius: 50%;
 }
 #pcm-p .pcm-e {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     z-index: 101;
 }
 #pcm-sc-1 {
@@ -149,7 +149,7 @@
     margin-top: -4px;
 }
 #pcm-do {
-    width: 19px;
+    width: 20px;
     height: 2px;
     /*left: 279px;*/
     /*top: 46px;*/
