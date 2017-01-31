@@ -1,17 +1,22 @@
+/*1223 / 389,75*/
+
 #logo {
   width:554px;
-  height:400px;
-  transform: scale(2.5);
-  margin-left: 390px;
-  margin-top: 300px;
+  width:515px;
+  height:80px;
+  transform: scale(3.13);
+  /*margin-left: 830px;*/
+  /*margin-top: 150px;*/
+  margin: 0 auto;
+
 }
 
 #pcm-c {
     width: 554px;
     border-top: 25px solid black;
     padding-bottom: 25px;
-    height: 136px;
-    height: 400px;
+    /*height: 136px;*/
+    height: 215px;
 
     position: relative;
     background: black;
@@ -23,6 +28,10 @@
     position: absolute;
     overflow: hidden;
 }
+#pcm-p {
+    background-image: url(./pacman10-hp-sprite-2.svg) !important;
+    /*background-size: 554px;*/
+}
 #pcm-p,
 #pcm-cc {
     left: 45px;
@@ -32,11 +41,11 @@
     overflow: hidden;
 }
 #pcm-p .pcm-d {
-    width: 2px;
-    height: 2px;
+    width: 3px;
+    height: 3px;
     margin-left: 3px;
     margin-top: 3px;
-    background: #f8b090;
+    background: #fff;
     z-index: 100;
     border-radius: 50%;
 }

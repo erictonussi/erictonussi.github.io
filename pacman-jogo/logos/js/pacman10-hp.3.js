@@ -2536,7 +2536,7 @@ var pacman = function() {
             j.style.height = f + "px";
             j.style.zIndex = 119;
             if (h) {
-                j.style.background = "url(logos/pacman10-hp-sprite-2.png) -" + g.killScreenTileX + "px -" + g.killScreenTileY + "px no-repeat";
+                j.style.background = "url(logos/pacman10-hp-sprite-2.svg) -" + g.killScreenTileX + "px -" + g.killScreenTileY + "px no-repeat";
                 g.killScreenTileY += 8
             } else j.style.background = "black";
             g.playfieldEl.appendChild(j)
