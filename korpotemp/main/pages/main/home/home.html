@@ -1,0 +1,41 @@
+<!-- <ion-header-bar align-title="left" class="bar-positive">
+  <div class="buttons">
+    <button class="button" ng-click="doSomething()">Left Button</button>
+  </div>
+  <h1 class="title">Title!</h1>
+  <div class="buttons">
+    <button class="button">Right Button</button>
+  </div>
+</ion-header-bar> -->
+
+<ion-view view-title="" hide-nav-bar-="true" class="home-view">
+  <!-- <ion-nav-bar class="bar-calm">
+    <ion-nav-back-button></ion-nav-back-button>
+  </ion-nav-bar> -->
+  <!-- <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons> -->
+  <!-- <ion-nav-bar class="bar-positive">
+  </ion-nav-bar> -->
+
+  <ion-content>
+
+    <div class="current-temp" ng-show="lastTemp" ng-click="chooseThermometer()">
+      <div class="perfil">
+        <img ng-src="{{thermometer.picture}}" class="">
+      </div>
+      <h3>{{lastTemp.temperatura | limitTo:4}}<sup>º</sup>C</h3>
+      <h4>{{thermometer.name}}</h4>
+      <p>{{lastTemp.data | date:'h:mma (dd/MM/yyyy)'}}</p>
+    </div>
+
+    <!-- <ul>
+      <li ng-repeat="message in messages">{{ message.temperatura }}</li>
+    </ul> -->
+
+    <home-chart data="data" time-limit="48"></home-chart>
+
+    <!-- <home-chart></home-chart> -->
+
+  </ion-content>
+</ion-view>

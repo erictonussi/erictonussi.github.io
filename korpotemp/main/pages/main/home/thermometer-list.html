@@ -1,0 +1,7 @@
+<ion-list class="thermometer-list">
+  <ion-item class="item-avatar" ng-repeat="thermometer in thermometers" ng-click="selectThermometer(thermometer)">
+    <img ng-src="{{thermometer.picture}}" class="">
+    <h2>{{thermometer.name}}</h2>
+    <p>{{thermometer.description}}</p>
+  </ion-item>
+</ion-list>

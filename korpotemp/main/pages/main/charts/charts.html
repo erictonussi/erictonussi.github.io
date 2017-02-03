@@ -1,0 +1,29 @@
+<ion-view view-title="Histórico">
+  <!-- <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-log-out"></button>
+  </ion-nav-buttons> -->
+  <ion-content>
+    <ion-list type="card">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Termometro
+        </div>
+        <select ng-options="item as item.name for item in thermometers track by item.id" ng-model="filters.selected"></select>
+      </label>
+      <label class="item item-input">
+        <div class="input-label">
+          Data inicial
+        </div>
+        <input type="date" name="inicial" placeholder="" ng-model="filters.inicial" ng-max="filters.final" required>
+      </label>
+      <label class="item item-input">
+        <div class="input-label">
+          Data final
+        </div>
+        <input type="date" name="final" placeholder="" ng-model="filters.final" ng-min="filters.inicial"" required>
+      </label>
+    </ion-list>
+
+    <home-chart data="data" time-limit="timeLimit" ng-if="data"></home-chart>
+  </ion-content>
+</ion-view>

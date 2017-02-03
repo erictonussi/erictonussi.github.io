@@ -1,0 +1,24 @@
+<ion-view view-title="Termometros" class="home-view">
+
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-plus" ng-click="selectThermometer()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding-">
+
+    <ion-list type="card" class="thermometer-list">
+      <ion-item class="item-avatar item-icon-right" ng-repeat="thermometer in thermometers" ng-click="selectThermometer(thermometer)">
+        <img ng-src="{{thermometer.picture}}" class="">
+        <h2>{{thermometer.name}}</h2>
+        <p>{{thermometer.description}}</p>
+        <ng-switch on="thermometer.batery">
+          <i ng-switch-when="0" class="icon ion-battery-empty"></i>
+          <i ng-switch-when="1" class="icon ion-battery-low"></i>
+          <i ng-switch-when="2" class="icon ion-battery-half"></i>
+          <i ng-switch-when="3" class="icon ion-battery-full"></i>
+        </ng-switch>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

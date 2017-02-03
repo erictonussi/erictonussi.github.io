@@ -1,0 +1,33 @@
+<ion-view view-title="User" class="login-page">
+  <ion-content class="padding" flex-center>
+    <div class="">
+      <h1 class="logo">korpotemp</h1>
+      <div class="login-form">
+          <label class="item item-input">
+            <input type="text" ng-model="user.username" placeholder="Email">
+          </label>
+          <label class="item item-input">
+            <input type="password" ng-model="user.password" placeholder="Senha">
+          </label>
+          <div class="padding-">
+            <button class="button button-block button-outline- button-positive button-stable"
+              ng-click="ctrl.signin()" ui-sref="main.home">
+              Entrar
+            </button>
+            <button class="button button-block button-clear register" >
+              Esqueceu sua senha?
+            </button>
+            <div class="spacer">
+              <hr>
+              ou
+              <hr>
+            </div>
+            <button class="button button-block button-clear register"
+              ui-sref="register">
+              Cadastre-se
+            </button>
+          </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

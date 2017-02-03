@@ -1,0 +1,18 @@
+<ion-list type-="card">
+  <ion-item class="item-avatar">
+    <img ng-src="{{currentThermometer.picture}}" class="">
+    <input type="text" name="name" placeholder="Nome do Termometro" ng-model="currentThermometer.name" required="" >
+    <!-- <textarea>Bre</textarea> -->
+  </ion-item>
+  <label class="item item-input">
+    <input type="text" name="description" placeholder="Descrição do Termometro" ng-model="currentThermometer.description" >
+  </label>
+  <div class="item item-divider">
+      Intervalo de atualização: {{intervals[currentThermometer.interval].description}}
+  </div>
+  <label class="item item range">
+    <!-- <i class="icon ion-minus"></i> -->
+    <input type="range" name="intervalo" ng-model="currentThermometer.interval" min="0" max="{{intervals.length-1}}">
+    <!-- <i class="icon ion-plus"></i> -->
+  </label>
+</ion-list>
